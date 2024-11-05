@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Wet+Paint&display=swap');
 
 *{
@@ -6,31 +6,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
     color: #000;
     font-weight: 600;
 }
-body{
+body, html{
     background-color: #f1f1f1;
+    scroll-behavior: smooth;
 }
 img{
     object-fit: cover;
 }
+
 /* Masuk Navigasi */
+
 nav{
     padding: 0 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 5em;
-    font-family: 'Playfair Display', sans-serif
+    font-family: 'Playfair Display', sans-serif;
 }
 
 nav .logo-left .main-separator{
     font-size: 2em;
     color: #0f2182;
     font-weight: 650;
+    cursor: pointer;
 }
 
 nav .logo-left .main-separator .sub-1{
@@ -44,6 +49,7 @@ nav .link a:not(:last-child){
 
 nav .link a:hover{
     color: darkgreen;
+    transition: all 0.5s ease;
 }
 
 nav .click{
@@ -51,7 +57,9 @@ nav .click{
     background-color: #000;
     border-radius: 17px;
     gap: 17px;
-    margin-right: 2em;
+    margin-top: 0.7em;
+    margin-right: 2.2em;
+    align-items: center;
 }
 nav .click .Get{
     padding: 0.5em 0.875em;
@@ -60,6 +68,9 @@ nav .click .Get{
     background-color: transparent;
     color: #fff;
     font-weight: 600;
+    align-items: center;
+    justify-content: center;
+
 }
 
 nav .click img{
@@ -80,44 +91,194 @@ nav .click img:hover{
     transition: all 0.3s ease;
     padding: 5px;
 }
-
-/* Masuk Header */
-header{
-    width: 100%;
-    height: 5em;
-    justify-content: center;
-    text-align: center;
-    margin: 200px 0;
-    align-items: center;
-    margin-left: 20px;
-}
-
-header .logo-center .separator{
-    color: #444444;
-    font-size:3em;
-    cursor: pointer;
-}
-
-header .logo-center .separator sub{
-    font-size: smaller;
-}
-
-header .logo-center .separator:hover{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* Masuk Section Materi */
-main .JRcontainer{
+/* Header */
+header .Tcontainer{
+    padding: 60px;
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
 }
 
-section .text-right{
+header .center-container{
+    text-align: center;
+    margin:5em 0;
+    justify-content: center;
     align-items: center;
-    margin: 100px 60px;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5); 
+    cursor: pointer;
+}
+
+header .wrapper{
+    margin: 6em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .Judul{
+  color: #1e3a8a;
+  font-size: 2.2em;
+  font-weight: 900;
+  text-shadow: 1px 1px 4px rgba(0, 0, 128, 0.5);
+  margin: 0;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+header div .sup-2{
+    font-size: 0.2em;
+    color: #667ae0;
+    text-shadow: none;
+}
+
+header .tabs{
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+div .tabs-left,
+div .tabs-right{
+    background-color:#000000;
+    border-radius: 3.125em;
+    width: 160px;
+    padding: 0.625em;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+div .tabs-left:hover{
+    background-color: #e6c300;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+div .tabs-right:hover{
+    background-color: #e6c300;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+div .tabs-left .active,
+div .tabs-right a{
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+/* Masuk Penjelasan Kalkulator */
+main .Exp-KBMI {
+    padding: 0 5em;
+    height: 100vh;
+}
+
+main #Judul-M{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10em ;
+}
+
+main #Judul-M .separator-M{
+    font-size: 36px;
+    font-weight: 520;
+    color: #0f2182;
+    line-height:2em ;
+    font-family: 'Playfair Display', sans-serif; ;
+}
+main .wrapper-p{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5em;
+}
+main #Judul-M .info-M{
+    color: #000;
+   font-family: 'Ubuntu', sans-serif;
+    font: 500;
+    font-size: 1.1em;
+    width: 50%;
+   text-align: center;
+   margin: 0 auto;
+}
+
+main .split-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1.25em;
+}
+
+main .text-left,
+main .text-left2,
+main .warning,
+main .Result {
+    background-color: #fff;
+    border-radius: 1.125em;
+    box-shadow: 0 0.625em 1.875em rgba(0, 0, 0, 0.2);
+    padding: 1.25em;
+    flex:1;
+    min-height: 16em;
+    margin: 0.625em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .text-left:hover,
+main .text-left2:hover,
+main .warning:hover,
+main .Result:hover {
+    box-shadow: none;
+}
+
+main div .separator1{
+    text-align: left;
+    font-size:1.375em;
+    margin-bottom:0.3125em ;
+}
+
+main div .separator{
+    text-align: left;
+    font-size:1.375em;
+    margin-bottom:0.7em ;
+}
+
+main div .separator1 i{
+    font-size: 0.625em;
+    color: #22ba57;
+}
+
+main div .separator1 sub{
+    font-size: small;
+    color: #22ba57;
+}
+
+main div .main-text{
+    line-height: 1.7em;
+    text-align: justify;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+main .text-left2 li{
+    line-height: 1.7em;
+    text-align: justify;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+ol{
+    padding:0 1.25em;
 }
 
 
-   
-  
