@@ -15,10 +15,12 @@
             Kalkulator <sub class="sub-1">BMI</sub>
         </span>
     </div>
-    <div class="link">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#text-right">Contact</a>
+    <div class="Lwrap">
+        <div class="link">
+            <a href="#">Home</a>
+            <a href="#" class="active">About</a>
+            <a href="#text-right">Contact</a>
+        </div>
     </div>
     <div class="click">
         <a href="#Judul-M" class="Get">Get's Started</a>
@@ -36,10 +38,10 @@
                     </div>
                     <div class="tabs">
                         <div class="tabs-left">
-                            <a href="#separator" class="active">Kalkulator</a>
+                            <a href="#JC-content" class="active">Rumus</a>
                         </div>
                         <div class="tabs-right">
-                        <a href="#">Rumus</a>
+                        <a href="#Kalkulator-BMI">Kalkulator</a>
                         </div>
                     </div>
                 </div>
@@ -96,10 +98,120 @@
                 <p class="main-text">
                     Kalkulator ini akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh atau BMI dihitung sebagai berat badan Anda dalam kilogram dibagi dengan kuadrat tinggi badan Anda dalam meter atau BMI =kg/M<sup>2</sup> .
                 </p>
-
             </div>
         </div>
     </section>
+
+    <section  class="Rumus-kalkulator">
+        <div class="Rcontainer">
+            <div class="judul-center">
+                <p id="JC-content">
+                    Cara Menghitung BMI Dan <span class="span-1">Interpretasi BMI</span><sup class="sup-4"><i class='bx bxs-calculator'></i></sup>
+                </p>
+            </div>
+            <div class="bgr">
+                <div class="R-contant">
+                    \[BMI = {Berat Badan \over (Tinggi Badan)2}\]
+                </div>
+            </div>
+            <div class="Bwrap">
+                <p class="buttom-R">
+                    Berat Badan dalam kilogram (kg) <br>
+                    Tinggi Badan dalam meter (m)
+                </p>
+            </div>
+            <div class="buttom-TR">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Status Berat Badan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kurang dari 18.5</td>
+                            <td>Kekurangan Berat Badan</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 &ndash; 24.9</td>
+                            <td>Normal (Ideal)</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 &ndash; 29.9</td>
+                            <td>Kelebihan Berat Badan</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 atau Lebih</td>
+                            <td>Kegemukan (Obesitas)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="Kalkulator-BMI">
+        <div class="Cwrap">
+            <div class="form-cal">
+                <form action="" method="post">
+                    <div class="brand">
+                        <p class="text-brand">Kalkulator BMI <sup class="sup-5"><i class='bx bxs-calculator'></i></sup></p>
+                    </div>
+                    <!-- Jenis Kelamin -->
+                    <section class="jenis-kelamin">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="pria" name="jenis-kelamin" value="pria" required>
+                            <label for="pria">Pria</label>
+                            <input type="radio" id="wanita" name="jenis-kelamin" value="wanita" required>
+                            <label for="wanita">Wanita</label>
+                        </div>
+                    </section>
+                    <!-- Berat Badan -->
+                    <section class="bb-badan">
+                        <div class="input-group">
+                            <label for="weight">Berat Badan <sub>(kg)</sub></label>
+                            <div class="input-wrapper">
+                                <span class="icon"><i class='bx bxs-pencil'></i></span>
+                                <input type="number" id="weight" placeholder="Masukkan berat badan" required>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Usia -->
+                    <section class="usia">
+                        <div class="input-group">
+                            <label for="usia">Usia</label>
+                            <div class="input-wrapper">
+                                <span class="icon"><i class='bx bxs-pencil'></i></span>
+                                <input type="number" id="usia" placeholder="18 Atau Lebih" required>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Tinggi -->
+                    <section class="tinggi">
+                        <div class="input-group">
+                            <label for="tinggi">Tinggi <sub>(cm)</sub></label>
+                            <div class="input-wrapper">
+                                <span class="icon"><i class='bx bxs-pencil'></i></span>
+                                <input type="number" id="tinggi" placeholder="Masukkan tinggi badan" required>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Button -->
+                    <section class="button">
+                        <div class="btn-group">
+                            <button type="submit" class="calculate">Hitung BMI</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </div>        
+    </section>
    </main>
+   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
