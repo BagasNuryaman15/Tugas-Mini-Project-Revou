@@ -28,7 +28,7 @@ nav{
     justify-content: space-between;
     height: 5em;
     font-family: 'Playfair Display', sans-serif;
-    max-width: 100em;
+   width: 100%;
 }
 
 nav .logo-left .main-separator{
@@ -161,6 +161,7 @@ header .tabs{
     justify-content: space-around;
     text-align: center;
     align-items: center;
+    gap: 20px;
 }
 
 div .tabs-left,
@@ -310,7 +311,6 @@ main .Rcontainer{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
 }
 
 
@@ -319,7 +319,7 @@ main .judul-center{
     margin-top: 1.5em;
     font-family: 'Playfair Display', sans-serif;
     line-height: 5em;
-    color: #f1f1f1;
+    color: #000;
 }
 
 main .judul-center .sup-4{
@@ -328,7 +328,7 @@ main .judul-center .sup-4{
 }
 
 main .judul-center .span-1{
-    color: #39ff14;
+    color: #1e3a8a;
     font-weight: 700;
 }
 
@@ -344,7 +344,7 @@ section .bgr{
 }
 
 section .buttom-R{
-    background-color:#28a745;;
+    background-color: #ffffff;
     width: 17%;
     border-radius: 0.7em;
     padding: 0.5em;
@@ -370,25 +370,23 @@ section .buttom-TR table {
 }
 
 section .buttom-TR th {
-    background-color: #0f2182; 
-    border: 1px solid #0a1a60;
-    color: white; 
+    color: rgb(25, 25, 27); 
     font-weight: bold;
     padding: 12px;
     text-align: center;
+    background-color: #0f2182;
 }
 
 section .buttom-TR tr:nth-child(even) {
-    background-color: #6a90c1;
+    background-color: #c0cae0;
 }
 
 section .buttom-TR tr:nth-child(odd) {
-    background-color: #3a5a8e; 
-    border-top: 1px solid #5c7b9f;
+  background-color: #007bff;
 }
 
 section .buttom-TR td {
-    color: #232222;
+  
     padding: 10px;
     text-align: center;
 }
@@ -401,13 +399,12 @@ section .buttom-TR td {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
     margin: 0;
 }
 
 /* Kartu form BMI */
 main section .form-cal {
-    background-color: rgba(173, 216, 230, 0.9);
+    background-color:#00abf0;
     padding: 1.875em;
     border-radius: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -416,15 +413,20 @@ main section .form-cal {
 }
 
 /* Bagian header atau brand */
-.brand {
+section .brand {
     text-align: center;
     margin-bottom: 20px;
+    color: #000;
 }
 
-.text-brand {
+section .brand .sup-5{
+    font-size: 0.4em;
+}
+
+section .brand .text-brand {
     font-size: 1.5em;
     font-weight: bold;
-    color: #333;
+    color: #000;
 }
 
 /* Pengaturan grup label dan input */
@@ -432,11 +434,12 @@ main section .form-cal {
     margin-bottom: 15px;
 }
 
-label {
+section form label {
     font-weight: bold;
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
+    color: #000;
+   display: block;
+    margin-bottom: 8px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Pengaturan untuk input dengan ikon di dalamnya */
@@ -515,4 +518,199 @@ button.calculate:hover {
 
 button.reset:hover {
     background-color: #aaa;
+}
+
+/* Hasil */
+
+main section .h-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+   align-items: center;
+}
+
+section .content-h{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 17px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+section .content-h:hover{
+    box-shadow: none;
+}
+
+section .brand-h{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font: 900;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+section .kat{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif ;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+section #result{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif ;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+section .keterangan{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif ;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+section .btn-download{
+    text-align: center;
+    margin: 20px 0;
+}
+
+section .btn-download button{
+    border: none;
+    background:none;
+    background-color: #00abf0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 17px;
+    transition: all 0.4s ease;
+}
+
+section .btn-download button:hover{
+    background-color: #0f2182;
+}
+
+
+/* Diagnosa */
+
+main section .k-container{
+    background-color:#ffffff;
+    width: 50%;
+    text-align:center;
+    margin-top:50px ;
+    padding: 30px 0;
+    border-radius: 17px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+main section .k-container:hover{
+    box-shadow: none;
+}
+
+section .content-k{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-family: 'Playfair Display',sans-serif;
+}
+
+section .isi-CM .p-cm{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+section .btn-group-m{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section div .btn-m{
+    display: flex;
+    border: none;
+    background: none;
+}
+
+section div .btn-m{
+    background-color: #00abf0;
+    color: #fff;
+    padding: 17px;
+    border-radius: 17px;
+}
+
+section div .btn-m:hover{
+    background-color: #0f2182;
+}
+/* Masuk Footer */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15em;
+}
+
+footer h3{
+    font-size: 40px;
+}
+
+footer .right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+footer .right .link{
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .link a{
+    color: #989898;
+    transition: color 0.3 ease;
+}
+
+footer .right .link a:hover{
+    color: #fff;
+}
+
+footer .right .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #b0a2a2;
+}
+
+footer .right .social #Insta:hover{
+    color:#DD2A7B ;
+}
+
+footer .right .social #Facebook:hover{
+    color: #1877F2;
+}
+
+footer .right .social #Whatsapp:hover{
+    color: #25D366;
+}
+
+footer .right p{
+    font-size:13px ;
+    color: #777;
 }
