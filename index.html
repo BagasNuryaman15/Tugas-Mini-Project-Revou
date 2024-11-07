@@ -204,7 +204,7 @@
                     <!-- Button -->
                     <section class="button">
                         <div class="btn-group">
-                            <button class="calculate" onclick="calculate()">Hitung BMI</button>
+                            <button type="button" class="calculate" onclick="calculate()">Hitung BMI</button>
                             <button type="reset" class="reset">Reset</button>
                         </div>
                     </section>
@@ -217,18 +217,16 @@
         <div class="h-container">
             <div class="content-h">
                 <div class="brand-h">
-                    <span clas="h-header">
-                        Hasil
-                    </span>
+                    <span class="h-header">Hasil</span>
                 </div>
                 <div class="kat">
-                    <span class="span-6">Masukan Data Terlebih Dahulu</span>
+                    <span class="span-6">Masukan Data Terlebih Dahulu</span> <!-- Tempat kategori BMI -->
                 </div>
                 <div id="result">
-                    <span class="result">Masukan Data Terlebih Dahulu</span>
+                    <span class="result">Masukan Data Terlebih Dahulu</span> <!-- Tempat hasil BMI -->
                 </div>
                 <div class="keterangan">
-                    <span class="keterangan">Masukan Data Terlebih Dahulu</span>
+                    <span class="keterangan">Masukan Data Terlebih Dahulu</span> <!-- Tempat deskripsi BMI -->
                 </div>
                 <div class="btn-download">
                     <button type="button">Unduh Hasil BMI</button>
@@ -239,18 +237,18 @@
                     <span class="span-8">Beberapa Penyakit Yang Berasal Dari Obesitas</span>
                 </div>
                 <div class="isi-CM">
-                   <p class="p-cm">Diabetes</p>
-                   <p class="p-cm">Hipertensi</p>
-                   <p class="p-cm">Penyakit Jantung</p>
-                   <p class="p-cm">Osteoarthritis</p>
-                </div> 
+                    <span>Diabetes</span>
+                    <span>Hipertensi</span>
+                    <span>Penyakit Jantung</span>
+                    <span>Osteoarthritis</span>
+                </div>
                 <div class="btn-group-m">
                     <button type="submit" class="btn-m">Konsultasi Dokter Via Aplikasi</button>
-                    <button type="submit" class="btn-m">Regostrasi Online Sekarang</button>
+                    <button type="submit" class="btn-m">Registrasi Online Sekarang</button>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
    </main>
 
    <footer>
@@ -268,18 +266,16 @@
             <i id="Whatsapp" class="fa-brands fa-whatsapp"></i>
         </div>
         <p>Copyright @ 2024 BagasNur, All Rights Reserved</p>
-        <div class="download">
-            <div class="header-d">
-                Unduh Aplikasi
-            </div>
-            <div class="logo-google">
-                <i class="fa-brands fa-google-play"></i>
-                <span>Google Play</span>
-            </div>
-            <div class="logo-ios">
-                <i class="fa-brands fa-apple"></i>
-                <span>App Store</span>
-            </div>
+        <div class="header-d">
+            Unduh Aplikasi
+        </div>
+        <div class="logo-google">
+            <i class="fa-brands fa-google-play"></i>
+            <span>Google Play</span>
+        </div>
+        <div class="logo-ios">
+            <i class="fa-brands fa-apple"></i>
+            <span>App Store</span>
         </div>
    </footer>
    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
